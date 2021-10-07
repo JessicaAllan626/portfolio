@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="./assets/JessicaLogo2.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./skillsets.html">Skillsets</a></li>
+                    <li><a href="./experience.html">Experience</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+<div class="text-box">
+    <h1>Jessica Allan</h1>
+    <p>Web Developer</p>
+</div>
+
+    </section>
+
+<section class="About">
+    <h1>About Me</h1>
+    <p>Hi there and welcome to my portfolio. As you could see already, my name is Jessica and I am currently a student at ElevenFifty Academy studying web development. I finished a 4 year bachelors degree in Animal Science at Purdue University, but was not satisfied in the career options I was seeing at the end of those 4 long years. After a huge decision to change careers, I found myself at ElevenFifty and have not looked back since. I love the puzzles and challenges that come along with the web development world and love to learn new things.</p>
+</section>
+
+<section class="Skillsets">
+    <h2>Skillsets</h2>
+        <div class="grid">
+            <div id="js"><img src="./assets/javascriptLogo.png">
+                <p>JavaScript</p>
+            </div>
+            <div id="css"><img src="./assets/css3Logo.png">
+                <p>CSS</p>
+            </div>
+            <div id="html"><img src="./assets/html5Logo.png">
+                <p>HTML</p>
+            </div>
+            <div id="bootstrap"><img src="./assets/bootstrapLogo.png">
+            <p>Bootstrap</p>
+            </div>
+            <div id="github"><img src="./assets/githubLogo.png">
+            <p>GitHub</p>
+            </div>
+            </grid>
+        </div>
+    </div>
+</section>
+
+<section class="Portfolio">
+    <h1>Portfolio</h1>
+    <p>Here is a sample of some of the projects I have completed at ElevenFifty.</p>
+
+    <div class="portfolioGrid">
+        <div class="assignments">
+            <a href="https://jessicaallan626.github.io/static/" target="_blank"><img src="./assets/staticLayout.png"></a>
+            <div class="layer">
+                <h3>Static Layout</h3>
+                <p>This assignment was a static layout.</p>
+            </div>
+        </div>
+        <div class="assignments">
+            <a href="https://codepen.io/JessicaAllan626/pen/VwWzZXL" target="_blank"><img src="./assets/cssCreature.png"></a>
+            <div class="layer">
+                <h3>CSS Creature</h3>
+                <p>For this assignment, I used codepen to create a creature using HTML and CSS.</p>
+            </div>
+        </div>
+        <div class="assignments">
+            <a href="https://jessicaallan626.github.io/apiOne/" target="_blank"><img src="./assets/apiOne.png"></a>
+            <div class="layer">
+                <h3>API 1</h3>
+                <p>For this assignment, I built my own dynamic client side web application. This application utilizes fetch to pull data from my selected API and then uses DOM manipulation to display the data from the API.</p> 
+            </div>
+        </div>
+        <div class="assignments">
+            <img src="IMAGE">
+            <div class="layer">
+                <h3>API 2</h3>
+                <p>For this assignment, I built another dynamic client side web application. This application utilizes fetch to pull data from a more difficult API and then uses DOM manipulation to display the data from the API. I then used bootstrap to style my application.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="myAdventure">
+    <h1>My Adventures</h1>
+    <p>Here are some signifanct experiences I have had thus far in my life:</p>
+    <div class="resume">
+    <button class="btn">
+    <a href="./assets/myResume.pdf" download="myResume">Download My Resume</a>
+    </button>
+    </div>
+</section>
+
+<section class="ContactMe">
+    <div class="contact">
+        <h1>Contact Me</h1>
+        <form id="contactForm" method="post" action="">
+            <input name="name" type="text" class="formSection" placeholder="Your Name" required><br>
+            <input name="email" type="text" class="formSection" placeholder="Your email" required><br> 
+            <textarea name="message" type="text" class="formSection" placeholder="A Message" rows="4" required></textarea><br> 
+            <input type="submit" class="formSection submit" value="Send Message">
+        </form>
+    </div>
+</section>
+</body>
+</html>
+
+

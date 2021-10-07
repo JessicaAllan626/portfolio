@@ -1,0 +1,321 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(./assets/castle.JPEG);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 1% 2% -3%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: lightgray;
+    width: 100%;
+    height: fit-content;
+    opacity: 85%;
+}
+
+nav img{
+    width: 155px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color:grey;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:gray;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color:black;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 75px;
+    font-family:initial;
+}
+
+.text-box p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.About{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 150px;
+    transform: translate(auto);
+    padding-bottom: 50px;
+}
+
+.About h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.About p{
+    color: darkslategray;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Skillsets{
+    background-image:linear-gradient(white,gray);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 150px;
+    transform: translate(auto);
+}
+
+.Skillsets h2{
+font-size: 36px;
+font-weight: 600;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#js img{
+    width: 50px;
+    padding-top: 25px;
+}
+
+#css img{
+    width: 50px;
+    padding-top: 25px;
+}
+
+#html img{
+    width: 50px;
+    padding-top: 25px;
+}
+
+#bootstrap img{
+    width: 50px;
+    padding-top: 25px;
+}
+
+#github img{
+    width: 50px;
+    padding-top: 25px;
+}
+
+.Portfolio{
+    width: 80%;
+    margin: auto;
+    padding-top: 150px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.Portfolio h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Portfolio p{
+    color: darkslategray;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.assignments{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: lightgrey;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.assignments img{
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+
+}
+
+.myAdventure{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 20px;
+}
+
+.myAdventure h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.myAdventure p{
+    color: darkslategray;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: linear-gradient(white, darkgray);
+    padding-top: 150px;
+}
+
+.contact h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 100px;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+}
+
+.contact p{
+    color: darkslategray;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.formSection{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: black;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 16px;
+}
+
+input{
+    height: 45px;
+}
+
+form .submit{
+    background: slategray;
+    border-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+form .submit:hover{
+    background-color:lightgrey;
+    cursor: pointer;
+}
+
+.btn{
+    color: darkslategray;
+    font-size: 14px;
+    font-weight: 300;
+    list-style: none;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: slategray;
+}
+
+
+footer{
+    width: 100%;
+    max-height: 50px;
+    background-color: lightgrey;
+}
+
+.iconLinks img{
+    max-width: 3%;
+    max-height: 3%;
+}
+.endNote{
+    background-color: lightgrey;
+}
+.endNote p{
+    text-align: center;
+    color: darkslategray;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
